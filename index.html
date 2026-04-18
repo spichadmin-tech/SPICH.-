@@ -4,34 +4,23 @@
 >
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPICH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SPICH. - Premium Network</title>
 
-    <link rel="icon" type="image/png" href="logo-spich.jpeg">
+    <link rel="icon" href="logo-spich.jpeg">
     <link rel="apple-touch-icon" href="logo-spich.jpeg">
+    <meta name="apple-mobile-web-app-title" content="SPICH">
+    <meta name="application-name" content="SPICH">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#008080">
-</head>
-  >
-    
-    <meta 
-        name="viewport" 
-        content="width=device-wivdth, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    >
-    
-    <title>
-        SPICH. - Premium Network
-    </title>
-    
+
     <link 
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" 
         rel="stylesheet"
     >
-    
     <link 
         rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -48,39 +37,22 @@
            ===================================================================== */
         :root { 
             --primary-teal: #008080; 
-            
             --dark-teal: #006666;
-            
             --premium-gold: #d4af37;
-            
             --deep-blue: #003366; 
-            
             --soft-gold: #f4e3b1;
-            
             --pure-white: #ffffff;
-            
             --bg-canvas: #f8fafc;
-            
             --slate-gray: #64748b;
-            
             --dark-text: #1e293b;
-            
             --danger-red: #ef4444;
-            
             --success-green: #10b981;
-            
             --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-            
             --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            
             --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-            
             --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            
             --radius-lg: 24px;
-            
             --radius-md: 16px;
-            
             --radius-sm: 12px;
         }
 
@@ -89,11 +61,8 @@
            ===================================================================== */
         * { 
             box-sizing: border-box; 
-            
             margin: 0; 
-            
             padding: 0; 
-            
             -webkit-tap-highlight-color: transparent; 
         }
 
@@ -103,21 +72,13 @@
 
         body { 
             height: 100%; 
-            
             background-color: var(--bg-canvas); 
-            
             font-family: 'Montserrat', sans-serif; 
-            
             color: var(--dark-text); 
-            
             line-height: 1.6; 
-            
             -webkit-font-smoothing: antialiased; 
-            
             display: flex; 
-            
             justify-content: center;
-            
             overflow-x: hidden;
         }
 
@@ -126,60 +87,31 @@
            ===================================================================== */
         .app-container {
             width: 100%; 
-            
             max-width: 500px; 
-            
             min-height: 100vh; 
-            
             background-color: var(--pure-white); 
-            
             display: flex; 
-            
             flex-direction: column; 
-            
             position: relative;
-            
             box-shadow: 0 0 40px rgba(0, 0, 0, 0.03);
-            
-            border-left-width: 5px;
-            
-            border-left-style: solid;
-            
-            border-left-color: var(--premium-gold); 
-            
-            border-right-width: 5px;
-            
-            border-right-style: solid;
-            
-            border-right-color: var(--premium-gold);
+            border-left: 5px solid var(--premium-gold);
+            border-right: 5px solid var(--premium-gold);
         }
 
         /* =====================================================================
            [SECTION 4] - HEADER
            ===================================================================== */
         .header-main { 
-            padding-top: 60px; 
-            
-            padding-right: 20px;
-            
-            padding-bottom: 20px;
-            
-            padding-left: 20px;
-            
+            padding: 60px 20px 20px 20px; 
             text-align: center; 
         }
 
         .brand-logo { 
             font-family: 'Comfortaa', cursive; 
-            
             font-size: 3.5rem; 
-            
             color: var(--primary-teal); 
-            
             font-weight: 700; 
-            
             letter-spacing: -3px; 
-            
             display: inline-block; 
         }
 
@@ -189,33 +121,21 @@
 
         .brand-sub { 
             font-size: 0.8rem; 
-            
             font-weight: 800; 
-            
             color: var(--slate-gray); 
-            
             letter-spacing: 5px; 
-            
             text-transform: uppercase; 
-            
             margin-top: -5px; 
-            
             margin-bottom: 20px; 
         }
 
         .biz-display-header { 
             font-weight: 800; 
-            
             color: var(--premium-gold); 
-            
             text-transform: uppercase; 
-            
             font-size: 0.9rem; 
-            
             letter-spacing: 2px; 
-            
             margin-top: -10px; 
-            
             margin-bottom: 20px; 
         }
 
@@ -224,23 +144,9 @@
            ===================================================================== */
         .view-scene { 
             display: none; 
-            
-            padding-top: 30px; 
-            
-            padding-right: 30px;
-            
-            padding-bottom: 30px;
-            
-            padding-left: 30px;
-            
+            padding: 30px;
             flex-direction: column; 
-            
-            animation-name: fadeInTransition;
-            
-            animation-duration: 0.4s;
-            
-            animation-timing-function: ease-out;
-            
+            animation: fadeInTransition 0.4s ease-out;
             position: relative;
         }
 
@@ -249,16 +155,8 @@
         }
 
         @keyframes fadeInTransition { 
-            from { 
-                opacity: 0; 
-                
-                transform: translateY(15px); 
-            } 
-            to { 
-                opacity: 1; 
-                
-                transform: translateY(0); 
-            } 
+            from { opacity: 0; transform: translateY(15px); } 
+            to { opacity: 1; transform: translateY(0); } 
         }
 
         /* =====================================================================
@@ -266,33 +164,11 @@
            ===================================================================== */
         .card-ui { 
             background-color: var(--pure-white); 
-            
-            padding-top: 25px; 
-            
-            padding-right: 25px;
-            
-            padding-bottom: 25px;
-            
-            padding-left: 25px;
-            
-            border-top-left-radius: var(--radius-lg); 
-            
-            border-top-right-radius: var(--radius-lg);
-            
-            border-bottom-right-radius: var(--radius-lg);
-            
-            border-bottom-left-radius: var(--radius-lg);
-            
-            border-width: 2px;
-            
-            border-style: solid;
-            
-            border-color: var(--soft-gold); 
-            
+            padding: 25px;
+            border-radius: var(--radius-lg);
+            border: 2px solid var(--soft-gold); 
             margin-bottom: 25px; 
-            
             box-shadow: var(--card-shadow); 
-            
             position: relative; 
         }
 
@@ -302,19 +178,12 @@
 
         .field-label { 
             display: block; 
-            
             font-size: 0.75rem; 
-            
             font-weight: 800; 
-            
             text-transform: uppercase; 
-            
             color: var(--primary-teal); 
-            
             margin-bottom: 10px; 
-            
             margin-left: 4px; 
-            
             letter-spacing: 1px; 
         }
 
@@ -322,1146 +191,721 @@
         input[type="tel"], 
         select { 
             width: 100%; 
-            
-            padding-top: 18px; 
-            
-            padding-right: 22px;
-            
-            padding-bottom: 18px;
-            
-            padding-left: 22px;
-            
-            border-top-left-radius: var(--radius-md); 
-            
-            border-top-right-radius: var(--radius-md);
-            
-            border-bottom-right-radius: var(--radius-md);
-            
-            border-bottom-left-radius: var(--radius-md);
-            
-            border-width: 2px;
-            
-            border-style: solid;
-            
-            border-color: #f1f5f9; 
-            
+            padding: 18px 22px; 
+            border-radius: var(--radius-md);
+            border: 2px solid #f1f5f9; 
             font-family: 'Montserrat', sans-serif; 
-            
             font-size: 1rem; 
-            
             font-weight: 500; 
-            
             color: var(--dark-text); 
-            
             background-color: #f8fafc; 
-            
-            transition-property: all;
-            
-            transition-duration: 0.3s;
-            
-            transition-timing-function: ease;
-            
+            transition: all 0.3s ease;
             outline: none; 
         }
 
         input:focus, 
         select:focus { 
             border-color: var(--primary-teal); 
-            
             background-color: var(--pure-white); 
-            
             box-shadow: 0 0 0 5px rgba(0, 128, 128, 0.08); 
         }
 
         .btn-action { 
             width: 100%; 
-            
-            padding-top: 22px; 
-            
-            padding-bottom: 22px;
-            
-            border-top-left-radius: var(--radius-md); 
-            
-            border-top-right-radius: var(--radius-md);
-            
-            border-bottom-right-radius: var(--radius-md);
-            
-            border-bottom-left-radius: var(--radius-md);
-            
+            padding: 22px; 
+            border-radius: var(--radius-md);
             border: none; 
-            
             font-family: 'Montserrat', sans-serif; 
-            
             font-size: 1.1rem; 
-            
             font-weight: 800; 
-            
             cursor: pointer; 
-            
-            transition-property: all;
-            
-            transition-duration: 0.3s;
-            
-            transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-            
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
             display: flex; 
-            
             align-items: center; 
-            
             justify-content: center; 
-            
             gap: 12px; 
-            
             box-shadow: var(--shadow-md); 
         }
 
-        .btn-primary { 
-            background-color: var(--primary-teal); 
-            
-            color: var(--pure-white); 
-        }
+        .btn-primary { background-color: var(--primary-teal); color: var(--pure-white); }
+        .btn-gold { background-color: var(--premium-gold); color: var(--pure-white); }
 
-        .btn-gold { 
-            background-color: var(--premium-gold); 
-            
-            color: var(--pure-white); 
-        }
-
-        .btn-action:active { 
-            transform: scale(0.96); 
-        }
-
-        .btn-action:disabled { 
-            background-color: #e2e8f0; 
-            
-            color: #94a3b8; 
-            
-            cursor: not-allowed; 
-            
-            box-shadow: none; 
-        }
+        .btn-action:active { transform: scale(0.96); }
+        .btn-action:disabled { background-color: #e2e8f0; color: #94a3b8; cursor: not-allowed; box-shadow: none; }
 
         .link-recover {
             display: block;
-            
             text-align: center;
-            
             margin-top: 25px;
-            
             color: var(--slate-gray);
-            
             font-size: 0.85rem;
-            
             font-weight: 700;
-            
             text-decoration: underline;
-            
             cursor: pointer;
         }
 
         /* =====================================================================
-           [SECTION 7] - BADGE LATERALE FIXATO & DASHBOARD
+           [SECTION 7] - DASHBOARD & BADGES
            ===================================================================== */
         .counter-display { 
             text-align: center; 
-            
-            padding-top: 40px;
-            
-            padding-bottom: 20px; 
-            
+            padding: 40px 20px 20px 20px; 
             margin-bottom: 20px; 
-            
             position: relative;
         }
 
-        .counter-number { 
-            font-size: 5rem; 
-            
-            font-weight: 800; 
-            
-            color: var(--primary-teal); 
-            
-            line-height: 1; 
-        }
-
-        .counter-label { 
-            font-weight: 700; 
-            
-            color: var(--slate-gray); 
-            
-            text-transform: uppercase; 
-            
-            letter-spacing: 3px; 
-            
-            font-size: 0.85rem; 
-            
-            margin-top: 10px;
-        }
+        .counter-number { font-size: 5rem; font-weight: 800; color: var(--primary-teal); line-height: 1; }
+        .counter-label { font-weight: 700; color: var(--slate-gray); text-transform: uppercase; letter-spacing: 3px; font-size: 0.85rem; margin-top: 10px; }
 
         .status-badge {
             position: absolute;
-            
             top: 25px;
-            
             right: 0px; 
-            
-            padding-top: 8px;
-            
-            padding-right: 15px;
-            
-            padding-bottom: 8px;
-            
-            padding-left: 20px;
-            
-            border-top-left-radius: 20px;
-            
-            border-bottom-left-radius: 20px;
-            
-            border-top-right-radius: 0;
-            
-            border-bottom-right-radius: 0;
-            
+            padding: 8px 15px 8px 20px;
+            border-radius: 20px 0 0 20px;
             font-size: 0.8rem;
-            
             font-weight: 900;
-            
             color: var(--pure-white);
-            
             letter-spacing: 2px;
-            
             box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.1);
-            
             z-index: 10;
-            
-            transition-property: all;
-            
-            transition-duration: 0.4s;
-            
-            transition-timing-function: ease;
         }
 
-        .badge-free { 
-            background-color: var(--slate-gray); 
-        }
-
-        .badge-pro { 
-            background-color: var(--premium-gold); 
-        }
+        .badge-free { background-color: var(--slate-gray); }
+        .badge-pro { background-color: var(--premium-gold); }
 
         .row-item { 
             display: flex; 
-            
             justify-content: space-between; 
-            
             align-items: center; 
-            
-            padding-top: 18px; 
-            
-            padding-right: 22px;
-            
-            padding-bottom: 18px;
-            
-            padding-left: 22px;
-            
+            padding: 18px 22px; 
             background-color: var(--pure-white); 
-            
-            border-width: 1px;
-            
-            border-style: solid;
-            
-            border-color: #f1f5f9; 
-            
+            border: 1px solid #f1f5f9; 
             border-radius: var(--radius-md); 
-            
             margin-bottom: 15px; 
-            
-            transition-property: all;
-            
-            transition-duration: 0.3s;
-            
-            transition-timing-function: ease; 
+            transition: all 0.3s ease; 
         }
 
-        .row-item:hover { 
-            border-color: var(--soft-gold); 
-            
-            transform: translateX(5px); 
-        }
+        .row-item:hover { border-color: var(--soft-gold); transform: translateX(5px); }
 
-        .row-info {
-            display: flex;
-            
-            flex-direction: column;
-        }
+        .row-info b { color: var(--primary-teal); font-size: 1.1rem; display: block; margin-bottom: 4px; }
+        .row-info span { color: var(--slate-gray); font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 2px; }
 
-        .row-info b { 
-            color: var(--primary-teal); 
-            
-            font-size: 1.1rem; 
-            
-            display: block; 
-            
-            margin-bottom: 4px;
-        }
-
-        .row-info span { 
-            color: var(--slate-gray); 
-            
-            font-size: 0.85rem; 
-            
-            font-weight: 600; 
-            
-            display: block; 
-            
-            margin-bottom: 2px;
-        }
-
-        .row-tools { 
-            display: flex; 
-            
-            gap: 10px; 
-        }
-
+        .row-tools { display: flex; gap: 10px; }
         .tool-btn { 
-            width: 45px; 
-            
-            height: 45px; 
-            
-            border-radius: 50%; 
-            
-            border: none; 
-            
-            display: flex; 
-            
-            align-items: center; 
-            
-            justify-content: center; 
-            
-            cursor: pointer; 
-            
-            color: var(--pure-white); 
-            
-            font-size: 1.2rem; 
-            
-            transition-property: all;
-            
-            transition-duration: 0.2s; 
+            width: 45px; height: 45px; border-radius: 50%; border: none; 
+            display: flex; align-items: center; justify-content: center; 
+            cursor: pointer; color: var(--pure-white); font-size: 1.2rem; transition: all 0.2s; 
         }
 
-        .btn-wa-action { 
-            background-color: #25D366; 
-        }
-        
-        .btn-pts-action { 
-            background-color: var(--premium-gold); 
-            
-            font-weight: 900; 
-        }
-        
-        .btn-del-action { 
-            background-color: #fee2e2; 
-            
-            color: var(--danger-red); 
-        }
-        
-        .btn-lock-action {
-            background-color: #e2e8f0;
-            
-            color: #94a3b8;
-        }
+        .btn-wa-action { background-color: #25D366; }
+        .btn-pts-action { background-color: var(--premium-gold); font-weight: 900; }
+        .btn-del-action { background-color: #fee2e2; color: var(--danger-red); }
+        .btn-lock-action { background-color: #e2e8f0; color: #94a3b8; }
 
         /* =====================================================================
            [SECTION 8] - PACCO REGALO SVG ORO
            ===================================================================== */
         .gift-svg-container {
-            margin-top: 0;
-            
-            margin-right: auto;
-            
-            margin-bottom: 30px;
-            
-            margin-left: auto;
-            
+            margin: 0 auto 30px auto;
             display: flex;
-            
             justify-content: center;
-            
-            animation-name: giftFloat;
-            
-            animation-duration: 3s;
-            
-            animation-timing-function: ease-in-out;
-            
-            animation-iteration-count: infinite;
+            animation: giftFloat 3s ease-in-out infinite;
         }
 
         @keyframes giftFloat {
-            0%, 100% { 
-                transform: translateY(0); 
-            }
-            50% { 
-                transform: translateY(-12px); 
-            }
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
         }
 
         /* =====================================================================
            [SECTION 9] - VOUCHER
            ===================================================================== */
-        .voucher-wrap {
-            text-align: center;
-            
-            padding-top: 10px;
-            
-            padding-bottom: 10px;
-        }
-
-        .v-biz-name {
-            font-family: 'Comfortaa', cursive;
-            
-            font-size: 2.8rem;
-            
-            color: var(--primary-teal);
-            
-            margin-bottom: 8px;
-            
-            font-weight: 700;
-        }
-
-        .v-user-welcome {
-            font-weight: 700;
-            
-            color: var(--slate-gray);
-            
-            font-size: 1.2rem;
-            
-            margin-bottom: 30px;
-        }
+        .voucher-wrap { text-align: center; padding: 10px 0; }
+        .v-biz-name { font-family: 'Comfortaa', cursive; font-size: 2.8rem; color: var(--primary-teal); margin-bottom: 8px; font-weight: 700; }
+        .v-user-welcome { font-weight: 700; color: var(--slate-gray); font-size: 1.2rem; margin-bottom: 30px; }
 
         .dots-grid {
             display: flex;
-            
             justify-content: center;
-            
             gap: 15px;
-            
-            margin-top: 25px;
-            
-            margin-bottom: 25px;
-            
-            margin-left: auto;
-            
-            margin-right: auto;
-            
+            margin: 25px auto;
             padding-bottom: 25px; 
-            
             width: 80%; 
-            
-            border-bottom-width: 2px;
-            
-            border-bottom-style: solid;
-            
-            border-bottom-color: #f1f5f9;
+            border-bottom: 2px solid #f1f5f9;
         }
 
         .fidelity-point {
-            width: 32px;
-            
-            height: 32px;
-            
-            border-radius: 50%;
-            
-            border-width: 2.5px;
-            
-            border-style: solid;
-            
-            border-color: var(--premium-gold);
-            
-            transition-property: all;
-            
-            transition-duration: 0.4s;
-            
-            transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            
+            width: 32px; height: 32px; border-radius: 50%;
+            border: 2.5px solid var(--premium-gold);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
         }
 
         .fidelity-point.filled {
             background-color: var(--premium-gold);
-            
             transform: scale(1.2);
-            
             box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
         }
 
         .fidelity-point.filled::after {
-            content: '✓';
-            
-            color: var(--pure-white);
-            
-            font-size: 14px;
-            
-            position: absolute;
-            
-            top: 50%;
-            
-            left: 50%;
-            
-            transform: translate(-50%, -50%);
-            
-            font-weight: 900;
+            content: '✓'; color: var(--pure-white); font-size: 14px;
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-weight: 900;
         }
 
         .qr-output-box {
-            margin-top: 35px;
-            
-            margin-bottom: 35px;
-            
-            margin-left: auto;
-            
-            margin-right: auto;
-            
-            padding-top: 20px;
-            
-            padding-right: 20px;
-            
-            padding-bottom: 20px;
-            
-            padding-left: 20px;
-            
+            margin: 35px auto;
+            padding: 20px;
             background-color: var(--pure-white);
-            
             display: inline-block;
-            
             border-radius: var(--radius-md);
-            
-            border-width: 1px;
-            
-            border-style: solid;
-            
-            border-color: #f1f5f9;
-            
+            border: 1px solid #f1f5f9;
             box-shadow: var(--shadow-md);
         }
 
         /* =====================================================================
-           [SECTION 10] - ALERTS
+           [SECTION 10] - ALERTS & FOOTER
            ===================================================================== */
-        .pro-upgrade-banner {
-            background-color: #fff5f5;
-            
-            border-width: 2px;
-            
-            border-style: dashed;
-            
-            border-color: var(--danger-red);
-            
-            padding-top: 25px;
-            
-            padding-right: 25px;
-            
-            padding-bottom: 25px;
-            
-            padding-left: 25px;
-            
-            border-radius: var(--radius-lg);
-            
-            margin-top: 25px;
-            
-            text-align: center;
-            
-            display: none;
-        }
-
-        .win-notif-box {
-            background-color: #fffcf0;
-            
-            border-width: 2px;
-            
-            border-style: solid;
-            
-            border-color: var(--premium-gold);
-            
-            padding-top: 25px;
-            
-            padding-right: 25px;
-            
-            padding-bottom: 25px;
-            
-            padding-left: 25px;
-            
-            border-radius: var(--radius-lg);
-            
-            margin-top: 25px;
-            
-            display: none;
-            
-            text-align: center;
-        }
+        .pro-upgrade-banner { background: #fff5f5; border: 2px dashed var(--danger-red); padding: 25px; border-radius: var(--radius-lg); margin-top: 25px; text-align: center; display: none; }
+        .win-notif-box { background: #fffcf0; border: 2px solid var(--premium-gold); padding: 25px; border-radius: var(--radius-lg); margin-top: 25px; display: none; text-align: center; }
 
         .toast-system {
-            position: fixed;
-            
-            bottom: 40px;
-            
-            left: 50%;
-            
-            transform: translateX(-50%);
-            
-            background-color: var(--dark-text);
-            
-            color: var(--pure-white);
-            
-            padding-top: 15px;
-            
-            padding-right: 30px;
-            
-            padding-bottom: 15px;
-            
-            padding-left: 30px;
-            
-            border-radius: 50px;
-            
-            font-size: 0.95rem;
-            
-            font-weight: 700;
-            
-            display: none;
-            
-            z-index: 9999;
-            
-            box-shadow: var(--shadow-lg);
+            position: fixed; bottom: 40px; left: 50%; transform: translateX(-50%);
+            background: var(--dark-text); color: var(--pure-white); padding: 15px 30px;
+            border-radius: 50px; font-size: 0.95rem; font-weight: 700; display: none; z-index: 9999; box-shadow: var(--shadow-lg);
         }
 
-        .footer-branding {
-            padding-top: 50px;
-            
-            padding-bottom: 50px;
-            
-            padding-left: 20px;
-            
-            padding-right: 20px;
-            
-            text-align: center;
-            
-            margin-top: auto;
-        }
-
-        .footer-branding p {
-            font-size: 0.7rem;
-            
-            color: var(--slate-gray);
-            
-            font-weight: 800;
-            
-            text-transform: uppercase;
-            
-            letter-spacing: 3px;
-        }
-
-        .qr-info-text {
-            font-size: 0.75rem; 
-            
-            color: var(--slate-gray); 
-            
-            padding-left: 30px; 
-            
-            padding-right: 30px;
-            
-            margin-top: 15px;
-            
-            margin-bottom: 30px;
-        }
+        .footer-branding { padding: 50px 20px; text-align: center; margin-top: auto; }
+        .footer-branding p { font-size: 0.7rem; color: var(--slate-gray); font-weight: 800; text-transform: uppercase; letter-spacing: 3px; }
+        .qr-info-text { font-size: 0.75rem; color: var(--slate-gray); padding: 0 30px; margin: 15px 0 30px 0; }
     </style>
 </head>
 <body>
 
-    <div 
-        class="app-container"
-    >
+    <div class="app-container">
         
-        <header 
-            class="header-main"
-        >
-            <h1 
-                class="brand-logo"
-            >
-                SPICH<span>.</span>
-            </h1>
-            
-            <p 
-                class="brand-sub"
-            >
-                Premium Network
-            </p>
-            
-            <div 
-                id="display-dash-biz-name" 
-                class="biz-display-header" 
-                style="display:none;"
-            >
-            </div>
+        <header class="header-main">
+            <h1 class="brand-logo">SPICH<span>.</span></h1>
+            <p class="brand-sub">Premium Network</p>
+            <div id="display-dash-biz-name" class="biz-display-header" style="display:none;"></div>
         </header>
 
-        <div 
-            id="sys-toast" 
-            class="toast-system"
-        >
-            Azione eseguita
-        </div>
+        <div id="sys-toast" class="toast-system">Azione eseguita</div>
 
-        <main 
-            id="view-setup" 
-            class="view-scene"
-        >
-            <div 
-                class="card-ui"
-            >
-                <h3 
-                    style="margin-bottom:25px; color:var(--primary-teal); font-weight:800; text-align:center;"
-                >
-                    Benvenuto nel Network
-                </h3>
+        <main id="view-setup" class="view-scene">
+            <div class="card-ui">
+                <h3 style="margin-bottom:25px; color:var(--primary-teal); font-weight:800; text-align:center;">Benvenuto nel Network</h3>
                 
-                <div 
-                    class="field-group"
-                >
-                    <label 
-                        class="field-label"
-                    >
-                        Nome della tua Attività
-                    </label>
-                    <input 
-                        type="text" 
-                        id="setup-name" 
-                        placeholder="Esempio: Studio Medico Spich"
-                    >
+                <div class="field-group">
+                    <label class="field-label">Nome della tua Attività</label>
+                    <input type="text" id="setup-name" placeholder="Esempio: Studio Medico Spich">
                 </div>
                 
-                <div 
-                    class="field-group"
-                >
-                    <label 
-                        class="field-label"
-                    >
-                        Contatto WhatsApp Business
-                    </label>
-                    <input 
-                        type="tel" 
-                        id="setup-phone" 
-                        placeholder="3331234567"
-                    >
+                <div class="field-group">
+                    <label class="field-label">Contatto WhatsApp Business</label>
+                    <input type="tel" id="setup-phone" placeholder="3331234567">
                 </div>
                 
-                <div 
-                    class="field-group"
-                >
-                    <label 
-                        class="field-label"
-                    >
-                        Settore Operativo
-                    </label>
-                    <select 
-                        id="setup-type"
-                    >
-                        <option 
-                            value="Salute"
-                        >
-                            Settore Sanitario
-                        </option>
-                        <option 
-                            value="Ristorazione"
-                        >
-                            Food & Beverage
-                        </option>
-                        <option 
-                            value="Wellness"
-                        >
-                            Benessere & Estetica
-                        </option>
+                <div class="field-group">
+                    <label class="field-label">Settore Operativo</label>
+                    <select id="setup-type">
+                        <option value="Salute">Settore Sanitario</option>
+                        <option value="Ristorazione">Food & Beverage</option>
+                        <option value="Wellness">Benessere & Estetica</option>
                     </select>
                 </div>
                 
-                <button 
-                    class="btn-action btn-primary" 
-                    onclick="initBusinessProfile()"
-                >
+                <button class="btn-action btn-primary" onclick="initBusinessProfile()">
                     ATTIVA ORA <i class="fas fa-check-circle"></i>
                 </button>
             </div>
             
-            <p 
-                style="text-align:center; font-size:0.75rem; color:var(--slate-gray); padding: 0 20px;"
-            >
+            <p style="text-align:center; font-size:0.75rem; color:var(--slate-gray); padding: 0 20px;">
                 Accedendo accetti i termini di gestione del Network Premium SPICH.
             </p>
 
-            <a 
-                class="link-recover" 
-                onclick="recoverAccount()"
-            >
+            <a class="link-recover" onclick="recoverAccount()">
                 Hai già un account? Recuperalo con il tuo ID
             </a>
         </main>
 
-        <main 
-            id="view-dash" 
-            class="view-scene"
-        >
-            
-            <span 
-                id="plan-badge" 
-                class="status-badge badge-free"
-            >
-                FREE
-            </span>
+        <main id="view-dash" class="view-scene">
+            <span id="plan-badge" class="status-badge badge-free">FREE</span>
 
-            <div 
-                class="counter-display"
-            >
-                <div 
-                    class="counter-number" 
-                    id="stats-total"
-                >
-                    0
-                </div>
-                <div 
-                    class="counter-label" 
-                    id="stats-label"
-                >
-                    Pazienti nel Cloud
-                </div>
+            <div class="counter-display">
+                <div class="counter-number" id="stats-total">0</div>
+                <div class="counter-label" id="stats-label">Pazienti nel Cloud</div>
             </div>
 
-            <div 
-                class="card-ui"
-            >
-                <div 
-                    class="field-group"
-                >
-                    <label 
-                        class="field-label" 
-                        id="label-client-name"
-                    >
-                        Nome Completo
-                    </label>
-                    <input 
-                        type="text" 
-                        id="new-client-name" 
-                        placeholder="Cognome e Nome"
-                    >
+            <div class="card-ui">
+                <div class="field-group">
+                    <label class="field-label" id="label-client-name">Nome Completo</label>
+                    <input type="text" id="new-client-name" placeholder="Cognome e Nome">
                 </div>
                 
-                <div 
-                    class="field-group"
-                >
-                    <label 
-                        class="field-label"
-                    >
-                        Cellulare WhatsApp
-                    </label>
-                    <input 
-                        type="tel" 
-                        id="new-client-tel" 
-                        placeholder="3XXXXXXXXX"
-                    >
+                <div class="field-group">
+                    <label class="field-label">Cellulare WhatsApp</label>
+                    <input type="tel" id="new-client-tel" placeholder="3XXXXXXXXX">
                 </div>
 
-                <div 
-                    id="reward-logic-panel"
-                >
-                    <div 
-                        class="field-group"
-                    >
-                        <label 
-                            class="field-label"
-                        >
-                            Benefit Amico (Sconto Referral)
-                        </label>
-                        <div 
-                            id="slot-referral"
-                        >
-                            <select 
-                                id="val-referral"
-                            >
-                                <option 
-                                    value="Sconto 10%"
-                                >
-                                    Sconto 10% (Default)
-                                </option>
-                                <option 
-                                    value="Sconto 20%"
-                                >
-                                    Sconto 20% (Premium)
-                                </option>
+                <div id="reward-logic-panel">
+                    <div class="field-group">
+                        <label class="field-label">Benefit Amico (Sconto Referral)</label>
+                        <div id="slot-referral">
+                            <select id="val-referral">
+                                <option value="Sconto 10%">Sconto 10% (Default)</option>
+                                <option value="Sconto 20%">Sconto 20% (Premium)</option>
                             </select>
                         </div>
                     </div>
                     
-                    <div 
-                        class="field-group"
-                    >
-                        <label 
-                            class="field-label"
-                        >
-                            Premio Fedeltà (5° Punto)
-                        </label>
-                        <div 
-                            id="slot-loyalty"
-                        >
-                            <input 
-                                type="text" 
-                                id="val-loyalty" 
-                                value="Sconto 50%" 
-                                readonly 
-                                style="opacity:0.6; cursor:not-allowed;"
-                            >
+                    <div class="field-group">
+                        <label class="field-label">Premio Fedeltà (5° Punto)</label>
+                        <div id="slot-loyalty">
+                            <input type="text" id="val-loyalty" value="Sconto 50%" readonly style="opacity:0.6; cursor:not-allowed;">
                         </div>
                     </div>
                 </div>
 
-                <div 
-                    id="alert-limit-reached" 
-                    class="pro-upgrade-banner"
-                >
-                    <i 
-                        class="fas fa-crown" 
-                        style="font-size:1.8rem; color:var(--premium-gold); margin-bottom:10px;"
-                    >
-                    </i>
-                    <h4 
-                        style="color:var(--danger-red); font-weight:800;"
-                    >
-                        LIMITE FREE RAGGIUNTO
-                    </h4>
-                    <p 
-                        style="font-size:0.8rem; color:var(--slate-gray); margin: 10px 0 20px;"
-                    >
+                <div id="alert-limit-reached" class="pro-upgrade-banner">
+                    <i class="fas fa-crown" style="font-size:1.8rem; color:var(--premium-gold); margin-bottom:10px;"></i>
+                    <h4 style="color:var(--danger-red); font-weight:800;">LIMITE FREE RAGGIUNTO</h4>
+                    <p style="font-size:0.8rem; color:var(--slate-gray); margin: 10px 0 20px;">
                         Hai gestito i tuoi primi 10 pazienti. Passa alla versione PRO per sbloccare database illimitato.
                     </p>
-                    <button 
-                        class="btn-action btn-gold" 
-                        onclick="sendProUpgradeRequest()"
-                    >
-                        SBLOCCA VERSIONE PRO
-                    </button>
+                    <button class="btn-action btn-gold" onclick="sendProUpgradeRequest()">SBLOCCA VERSIONE PRO</button>
                 </div>
 
-                <button 
-                    id="btn-submit-main" 
-                    class="btn-action btn-primary" 
-                    style="margin-top:10px;" 
-                    onclick="registerNewPatient()"
-                >
+                <button id="btn-submit-main" class="btn-action btn-primary" style="margin-top:10px;" onclick="registerNewPatient()">
                     CREA PASS REGALO <i class="fas fa-plus-circle"></i>
                 </button>
             </div>
 
-            <div 
-                style="display:flex; justify-content:space-between; align-items:center; margin: 15px 5px;"
-            >
-                <h4 
-                    style="font-weight:800; color:var(--primary-teal); text-transform:uppercase; font-size:0.85rem;"
-                >
-                    Anagrafica Attiva
-                </h4>
-                <span 
-                    id="session-tag" 
-                    style="font-size:0.6rem; background:#f1f5f9; padding:4px 10px; border-radius:10px; font-weight:700; color:#64748b;"
-                >
-                    LIVE SYNC
-                </span>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin: 15px 5px;">
+                <h4 style="font-weight:800; color:var(--primary-teal); text-transform:uppercase; font-size:0.85rem;">Anagrafica Attiva</h4>
+                <span id="session-tag" style="font-size:0.6rem; background:#f1f5f9; padding:4px 10px; border-radius:10px; font-weight:700; color:#64748b;">LIVE SYNC</span>
             </div>
             
-            <div 
-                id="main-list-render" 
-                class="list-container"
-            >
-            </div>
+            <div id="main-list-render" class="list-container"></div>
         </main>
 
-        <main 
-            id="view-voucher" 
-            class="view-scene"
-        >
-            <div 
-                class="voucher-wrap"
-            >
-                
-                <div 
-                    class="gift-svg-container"
-                >
-                    <svg 
-                        viewBox="0 0 100 100" 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        style="width: 110px; height: 110px; filter: drop-shadow(0 10px 15px rgba(212, 175, 55, 0.4));"
-                    >
-                        <path 
-                            d="M 46 29 C 46 12, 22 12, 35 29 Z" 
-                            fill="none" 
-                            stroke="var(--premium-gold)" 
-                            stroke-width="7" 
-                            stroke-linecap="round" 
-                            stroke-linejoin="round"
-                        />
-                        <path 
-                            d="M 54 29 C 54 12, 78 12, 65 29 Z" 
-                            fill="none" 
-                            stroke="var(--premium-gold)" 
-                            stroke-width="7" 
-                            stroke-linecap="round" 
-                            stroke-linejoin="round"
-                        />
-                        <rect 
-                            x="18" 
-                            y="32" 
-                            width="28" 
-                            height="12" 
-                            rx="2" 
-                            fill="var(--premium-gold)" 
-                        />
-                        <rect 
-                            x="54" 
-                            y="32" 
-                            width="28" 
-                            height="12" 
-                            rx="2" 
-                            fill="var(--premium-gold)" 
-                        />
-                        <rect 
-                            x="22" 
-                            y="47" 
-                            width="24" 
-                            height="40" 
-                            rx="2" 
-                            fill="var(--premium-gold)" 
-                        />
-                        <rect 
-                            x="54" 
-                            y="47" 
-                            width="24" 
-                            height="40" 
-                            rx="2" 
-                            fill="var(--premium-gold)" 
-                        />
+        <main id="view-voucher" class="view-scene">
+            <div class="voucher-wrap">
+                <div class="gift-svg-container">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 110px; height: 110px; filter: drop-shadow(0 10px 15px rgba(212, 175, 55, 0.4));">
+                        <path d="M 46 29 C 46 12, 22 12, 35 29 Z" fill="none" stroke="var(--premium-gold)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M 54 29 C 54 12, 78 12, 65 29 Z" fill="none" stroke="var(--premium-gold)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="18" y="32" width="28" height="12" rx="2" fill="var(--premium-gold)" />
+                        <rect x="54" y="32" width="28" height="12" rx="2" fill="var(--premium-gold)" />
+                        <rect x="22" y="47" width="24" height="40" rx="2" fill="var(--premium-gold)" />
+                        <rect x="54" y="47" width="24" height="40" rx="2" fill="var(--premium-gold)" />
                     </svg>
                 </div>
 
-                <h2 
-                    id="display-biz-name" 
-                    class="v-biz-name"
-                >
-                    STUDIO
-                </h2>
+                <h2 id="display-biz-name" class="v-biz-name">STUDIO</h2>
+                <p id="display-user-name" class="v-user-welcome">Benvenuto</p>
                 
-                <p 
-                    id="display-user-name" 
-                    class="v-user-welcome"
-                >
-                    Benvenuto
-                </p>
-                
-                <p 
-                    id="display-friend-subtitle" 
-                    style="display:none; color:var(--primary-teal); font-weight:800; text-transform:uppercase; margin-bottom:20px; font-size:1.3rem;"
-                >
-                </p>
+                <p id="display-friend-subtitle" style="display:none; color:var(--primary-teal); font-weight:800; text-transform:uppercase; margin-bottom:20px; font-size:1.3rem;"></p>
 
-                <div 
-                    class="dots-grid" 
-                    id="display-dots-ui"
-                >
-                    <div 
-                        class="fidelity-point"
-                    >
-                    </div>
-                    <div 
-                        class="fidelity-point"
-                    >
-                    </div>
-                    <div 
-                        class="fidelity-point"
-                    >
-                    </div>
-                    <div 
-                        class="fidelity-point"
-                    >
-                    </div>
-                    <div 
-                        class="fidelity-point"
-                    >
-                    </div>
+                <div class="dots-grid" id="display-dots-ui">
+                    <div class="fidelity-point"></div>
+                    <div class="fidelity-point"></div>
+                    <div class="fidelity-point"></div>
+                    <div class="fidelity-point"></div>
+                    <div class="fidelity-point"></div>
                 </div>
 
-                <div 
-                    id="display-win-box" 
-                    class="win-notif-box"
-                >
-                    <p 
-                        style="color:var(--primary-teal); font-weight:800; font-size:1.1rem; text-transform:uppercase;"
-                    >
-                        Vantaggio Sbloccato!
-                    </p>
-                    <p 
-                        id="display-reward-desc" 
-                        style="color:var(--premium-gold); font-weight:700; font-size:1.2rem; margin-top:5px;"
-                    >
-                    </p>
+                <div id="display-win-box" class="win-notif-box">
+                    <p style="color:var(--primary-teal); font-weight:800; font-size:1.1rem; text-transform:uppercase;">Vantaggio Sbloccato!</p>
+                    <p id="display-reward-desc" style="color:var(--premium-gold); font-weight:700; font-size:1.2rem; margin-top:5px;"></p>
                 </div>
 
-                <div 
-                    class="qr-output-box" 
-                    id="display-qr-box"
-                >
-                    <div 
-                        id="qrcode-canvas"
-                    >
-                    </div>
+                <div class="qr-output-box" id="display-qr-box">
+                    <div id="qrcode-canvas"></div>
                 </div>
 
-                <p 
-                    id="display-info-text" 
-                    class="qr-info-text"
-                >
+                <p id="display-info-text" class="qr-info-text">
                     Presenta questo Pass digitale al desk. Ad ogni visita accumuli punti per il tuo premio fedeltà.
                 </p>
 
-                <button 
-                    id="btn-share-friend" 
-                    class="btn-action btn-gold" 
-                    onclick="shareVoucherLink()"
-                >
+                <button id="btn-share-friend" class="btn-action btn-gold" onclick="shareVoucherLink()">
                     REGALA SCONTO 
                 </button>
             </div>
         </main>
 
-        <footer 
-            class="footer-branding"
-        >
-            <p>
-                &copy; 2026 SPICH. DIGITAL NETWORK
-            </p>
-            <div 
-                id="debug-info" 
-                style="font-size:0.5rem; color:#cbd5e1; margin-top:10px;"
-            >
-                ID: --
-            </div>
+        <footer class="footer-branding">
+            <p>&copy; 2026 SPICH. DIGITAL NETWORK</p>
+            <div id="debug-info" style="font-size:0.5rem; color:#cbd5e1; margin-top:10px;">ID: --</div>
         </footer>
 
     </div>
 
     <script>
+        // DISATTIVA MENU CONTESTUALE PER EFFETTO APP NATIVA
         document.addEventListener('contextmenu', event => event.preventDefault());
-        document.onkeydown = function(e) {
-            if(e.keyCode == 123) return false;
-            if(e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 67 || e.keyCode == 74)) return false;
-            if(e.ctrlKey && e.keyCode == 85) return false;
-        };
-    </script>
 
-    <script>
-        const _0x1a2b="https://script.google.com/macros/s/AKfycbzZh0PXCX_YMloGNyo7VsAJ8zIvFjHTi6TcK8pV6QyEqXEVZJRJX2R5J-SjavFbQNRm9A/exec";let state={deviceID:localStorage.getItem('spich_v18_device_id')||generateUID(),bizProfile:JSON.parse(localStorage.getItem('spich_v18_biz_data')||'null'),patientDb:JSON.parse(localStorage.getItem('spich_v18_db')||'[]'),isProActive:!1};window.addEventListener('DOMContentLoaded',async()=>{if(!localStorage.getItem('spich_v18_device_id')){localStorage.setItem('spich_v18_device_id',state.deviceID)}const d=document.getElementById('debug-info');if(d)d.innerText="SESSION ID: "+state.deviceID;const u=new URLSearchParams(window.location.search),v=u.get('v');if(v==='gift'){initVoucherMode(u,!1)}else if(v==='friend'){initVoucherMode(u,!0)}else if(!state.bizProfile){navigateTo('setup')}else{navigateTo('dash');const b=document.getElementById('display-dash-biz-name');if(b){b.innerText=state.bizProfile.name;b.style.display='block'}applyTerminology();refreshPatientUI();await checkCloudStatus()}});function generateUID(){return'SP-'+Math.random().toString(36).substr(2,9).toUpperCase()}function navigateTo(s){document.querySelectorAll('.view-scene').forEach(e=>e.classList.remove('active'));const t=document.getElementById('view-'+s);if(t)t.classList.add('active');window.scrollTo(0,0)}function triggerToast(m){const t=document.getElementById('sys-toast');if(t){t.innerText=m;t.style.display='block';setTimeout(()=>{t.style.display='none'},3000)}}async function recoverAccount(){const i=prompt("Inserisci il tuo ID Dispositivo (Es. SP-XXXXXXX):");if(!i||i.trim()==="")return;const c=i.trim().toUpperCase();triggerToast("Verifica ID nel Cloud...");try{const r=await fetch(`${_0x1a2b}?recoverId=${c}`),d=await r.json();if(d.exists){state.deviceID=c;localStorage.setItem('spich_v18_device_id',c);state.bizProfile={name:d.bizName,phone:"390000000000",sector:d.sector,created_at:new Date().toISOString()};localStorage.setItem('spich_v18_biz_data',JSON.stringify(state.bizProfile));if(d.patients&&d.patients.length>0){state.patientDb=d.patients;localStorage.setItem('spich_v18_db',JSON.stringify(state.patientDb))}alert("Account recuperato con successo!");location.reload()}else{alert("Attenzione: Questo ID non è stato trovato.")}}catch(e){alert("Errore di connessione.")}}async function checkCloudStatus(){if(!state.bizProfile)return;try{const r=await fetch(`${_0x1a2b}?checkPro=${state.deviceID}`),c=await r.json();if(c.status==="UNAUTHORIZED"||c.exists===!1){localStorage.clear();location.reload();return}const b=document.getElementById('plan-badge');if(c.isPro==="PRO"){state.isProActive=!0;if(b){b.innerText="PRO";b.classList.remove('badge-free');b.classList.add('badge-pro')}unlockProFeatures()}else{if(b){b.innerText="FREE";b.classList.remove('badge-pro');b.classList.add('badge-free')}}toggleLimitWarnings()}catch(e){}}function initBusinessProfile(){const n=document.getElementById('setup-name').value.trim(),p=document.getElementById('setup-phone').value.trim(),s=document.getElementById('setup-type').value;if(n.length<3){alert("Errore: Nome attività troppo corto.");return}if(!/^[0-9]{8,11}$/.test(p)){alert("Errore: Numero WhatsApp non valido.");return}state.bizProfile={name:n,phone:'39'+p.replace(/\D/g,''),sector:s,created_at:new Date().toISOString()};localStorage.setItem('spich_v18_biz_data',JSON.stringify(state.bizProfile));fetch(_0x1a2b,{method:"POST",mode:"no-cors",body:JSON.stringify({t:"REG_BIZ",id:state.deviceID,nome:n,settore:s})});triggerToast("NETWORK ATTIVATO CON SUCCESSO!");setTimeout(()=>{location.reload()},1500)}function registerNewPatient(){const n=document.getElementById('new-client-name').value.trim(),t=document.getElementById('new-client-tel').value.trim(),rE=document.getElementById('val-referral'),lE=document.getElementById('val-loyalty'),cR=rE?rE.value:'Sconto 10%',cL=lE?lE.value:'Trattamento Omaggio';if(n.length<3){alert("Inserire il nome completo.");return}if(!/^[0-9]{9,11}$/.test(t)){alert("Numero WhatsApp non valido.");return}const u='CID-'+Date.now().toString(36).toUpperCase(),pR={cid:u,nome:n,tel:'39'+t.replace(/\D/g,''),sconto:cR,premio:cL,pts:0};state.patientDb.unshift(pR);localStorage.setItem('spich_v18_db',JSON.stringify(state.patientDb));fetch(_0x1a2b,{method:"POST",mode:"no-cors",body:JSON.stringify({t:"ADD_CLIENT",bizId:state.deviceID,bizName:state.bizProfile.name,clientName:n,clientTel:pR.tel,cid:u,sconto:cR,premio:cL})});triggerToast("Pass Creato!");refreshPatientUI();toggleLimitWarnings();document.getElementById('new-client-name').value="";document.getElementById('new-client-tel').value=""}function refreshPatientUI(){const l=document.getElementById('main-list-render');if(!l)return;l.innerHTML="";const s=document.getElementById('stats-total');if(s)s.innerText=state.patientDb.length;if(state.patientDb.length===0){l.innerHTML=`<p style="text-align:center; color:#94a3b8; font-weight:600; padding:30px;">Anagrafica vuota.</p>`;return}state.patientDb.forEach((e,i)=>{const rU=window.location.href.split('?')[0],vP=`?v=gift&st=${encodeURIComponent(state.bizProfile.name)}&wa=${state.bizProfile.phone}&n=${encodeURIComponent(e.nome)}&cid=${e.cid}&pr=${encodeURIComponent(e.premio)}&sc=${encodeURIComponent(e.sconto)}`,fL=rU+vP,wT=`Ciao ${e.nome}! \uD83C\uDF81 Ecco il tuo Pass Regalo speciale di ${state.bizProfile.name}!\n\nUtilizzalo per accumulare punti o regalarlo a un amico. \u2728\n\nVisualizza il pass qui:\n${fL}`,wU=`https://wa.me/${e.tel}?text=${encodeURIComponent(wT)}`;let d="";if(state.isProActive){d=`<button class="tool-btn btn-del-action" onclick="removeEntry(${i})"><i class="fas fa-trash-alt"></i></button>`}else{d=`<button class="tool-btn btn-lock-action" onclick="alert('Funzione bloccata. Passa alla versione PRO per sbloccare l\\'eliminazione dei pazienti.')"><i class="fas fa-lock"></i></button>`}l.innerHTML+=`<div class="row-item"><div class="row-info"><b>${e.nome}</b><span>${e.pts} Punti Registrati</span><span>Premio: ${e.premio}</span></div><div class="row-tools"><a href="${wU}" target="_blank" class="tool-btn btn-wa-action"><i class="fab fa-whatsapp"></i></a><button class="tool-btn btn-pts-action" onclick="updatePoints(${i})">+1</button>${d}</div></div>`})}function updatePoints(i){state.patientDb[i].pts++;localStorage.setItem('spich_v18_db',JSON.stringify(state.patientDb));fetch(_0x1a2b,{method:"POST",mode:"no-cors",body:JSON.stringify({t:"UPDATE_POINTS",bizId:state.deviceID,cid:state.patientDb[i].cid,pts:state.patientDb[i].pts})});triggerToast("Punto Registrato!");refreshPatientUI()}function removeEntry(i){if(!state.isProActive)return;const n=state.patientDb[i].nome,c=state.patientDb[i].cid;if(confirm("Rimuovere "+n+" definitivamente?")){state.patientDb.splice(i,1);localStorage.setItem('spich_v18_db',JSON.stringify(state.patientDb));fetch(_0x1a2b,{method:"POST",mode:"no-cors",body:JSON.stringify({t:"DELETE_CLIENT",bizId:state.deviceID,cid:c})});triggerToast("Eliminato.");refreshPatientUI();toggleLimitWarnings()}}function toggleLimitWarnings(){if(state.isProActive)return;const b=document.getElementById('alert-limit-reached'),s=document.getElementById('btn-submit-main');if(state.patientDb.length>=10){if(b)b.style.display='block';if(s)s.disabled=!0}else{if(b)b.style.display='none';if(s)s.disabled=!1}}function unlockProFeatures(){const r=document.getElementById('slot-referral'),l=document.getElementById('slot-loyalty');if(r)r.innerHTML=`<input type="text" id="val-referral" placeholder="Sconto Amico Libero">`;if(l)l.innerHTML=`<input type="text" id="val-loyalty" placeholder="Premio Libero">`}async function initVoucherMode(p,i){navigateTo('voucher');const s=p.get('st')||"SPICH NETWORK",b=document.getElementById('display-biz-name');if(b)b.innerText=s;if(i){document.getElementById('display-user-name').innerText="Un amico ti ha fatto un regalo!";const f=document.getElementById('display-friend-subtitle');if(f){f.innerText=p.get('sc')||"Vantaggio Esclusivo";f.style.display="block"}document.getElementById('display-dots-ui').style.display='none';document.getElementById('display-qr-box').style.display='none';document.getElementById('btn-share-friend').style.display='none';document.getElementById('display-info-text').innerText="Mostra questa schermata alla reception per ricevere il tuo regalo."}else{document.getElementById('display-user-name').innerText="Ciao, "+(p.get('n')||"Paziente");const r=document.getElementById('display-reward-desc');if(r)r.innerText=p.get('pr')||"Premio Fedeltà";const q=document.getElementById("qrcode-canvas");if(q){new QRCode(q,{text:window.location.href,width:170,height:170,colorDark:"#003366",colorLight:"#ffffff"})}try{const c=p.get('cid'),rs=await fetch(`${_0x1a2b}?getCid=${c}`),cd=await rs.json(),pt=parseInt(cd.pts||0),d=document.querySelectorAll('.fidelity-point');for(let j=0;j<pt&&j<5;j++){d[j].classList.add('filled')}if(pt>=5){const w=document.getElementById('display-win-box');if(w)w.style.display="block"}}catch(e){}}}function shareVoucherLink(){const c=new URL(window.location.href);c.searchParams.set('v','friend');const s=c.searchParams.get('st')||"questo studio",sc=c.searchParams.get('sc')||"un vantaggio speciale",m=`Ehi! \uD83D\uDC4B Guarda che regalo ho ricevuto da ${s}: uno ${sc} per te! \uD83C\uDF81\n\nClicca su questo link per ottenerlo subito \uD83D\uDC47:\n${c.toString()}`;window.open(`https://wa.me/?text=${encodeURIComponent(m)}`)}function applyTerminology(){if(!state.bizProfile||!state.bizProfile.sector)return;const m={"Ristorazione":"Ospiti","Wellness":"Clienti","Salute":"Pazienti"},t=m[state.bizProfile.sector]||"Pazienti",s=document.getElementById('stats-label'),l=document.getElementById('label-client-name'),p=document.getElementById('new-client-name');if(s)s.innerText=t+" nel Cloud";if(l)l.innerText="Nome "+t;if(p)p.placeholder="Inserisci Nome "+t}function sendProUpgradeRequest(){if(!state.deviceID||!state.bizProfile)return;fetch(_0x1a2b,{method:"POST",mode:"no-cors",body:JSON.stringify({t:"REQ_PRO",id:state.deviceID,nome:state.bizProfile.name})});alert("RICHIESTA INVIATA!\n\nIl nostro Team verificherà la richiesta. Verrai contattato sul tuo numero di WhatsApp Business per completare l'attivazione ufficiale al piano PRO.")}
+        // CONFIGURAZIONE VARIABILI GLOBALI
+        const _0x1a2b = "https://script.google.com/macros/s/AKfycbzK-ORcJzMGCH50-z6Gvy5g8iAnGD5uBfPqZ4IS-EovliwB84G9bUUKLyWLXgELCC1KjA/exec";
+        
+        let state = {
+            deviceID: localStorage.getItem('spich_v18_device_id') || generateUID(),
+            bizProfile: JSON.parse(localStorage.getItem('spich_v18_biz_data') || 'null'),
+            patientDb: JSON.parse(localStorage.getItem('spich_v18_db') || '[]'),
+            isProActive: false
+        };
+
+        // INIZIALIZZAZIONE APP
+        window.addEventListener('DOMContentLoaded', async () => {
+            if (!localStorage.getItem('spich_v18_device_id')) {
+                localStorage.setItem('spich_v18_device_id', state.deviceID);
+            }
+
+            const d = document.getElementById('debug-info');
+            if (d) d.innerText = "SESSION ID: " + state.deviceID;
+
+            const u = new URLSearchParams(window.location.search);
+            const v = u.get('v');
+
+            if (v === 'gift') {
+                initVoucherMode(u, false);
+            } else if (v === 'friend') {
+                initVoucherMode(u, true);
+            } else if (!state.bizProfile) {
+                navigateTo('setup');
+            } else {
+                navigateTo('dash');
+                const b = document.getElementById('display-dash-biz-name');
+                if (b) {
+                    b.innerText = state.bizProfile.name;
+                    b.style.display = 'block';
+                }
+                applyTerminology();
+                refreshPatientUI();
+                await checkCloudStatus();
+            }
+        });
+
+        // GENERATORE ID UNICO
+        function generateUID() {
+            return 'SP-' + Math.random().toString(36).substr(2, 9).toUpperCase();
+        }
+
+        // NAVIGAZIONE SCENE
+        function navigateTo(s) {
+            document.querySelectorAll('.view-scene').forEach(e => e.classList.remove('active'));
+            const t = document.getElementById('view-' + s);
+            if (t) t.classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        // SISTEMA NOTIFICHE TOAST
+        function triggerToast(m) {
+            const t = document.getElementById('sys-toast');
+            if (t) {
+                t.innerText = m;
+                t.style.display = 'block';
+                setTimeout(() => { t.style.display = 'none' }, 3000);
+            }
+        }
+
+        // [FUNZIONE: RECUPERO ACCOUNT DAL CLOUD]
+        async function recoverAccount() {
+            const i = prompt("Inserisci il tuo ID Dispositivo (Es. SP-XXXXXXX):");
+            if (!i || i.trim() === "") return;
+            const c = i.trim().toUpperCase();
+            triggerToast("Verifica ID nel Cloud...");
+            
+            try {
+                const r = await fetch(`${_0x1a2b}?recoverId=${c}`);
+                const d = await r.json();
+                
+                if (d.exists) {
+                    state.deviceID = c;
+                    localStorage.setItem('spich_v18_device_id', c);
+                    
+                    state.bizProfile = {
+                        name: d.bizName, 
+                        phone: d.whatsapp || "390000000000", 
+                        sector: d.sector, 
+                        created_at: new Date().toISOString()
+                    };
+                    localStorage.setItem('spich_v18_biz_data', JSON.stringify(state.bizProfile));
+                    
+                    state.patientDb = d.patients || [];
+                    localStorage.setItem('spich_v18_db', JSON.stringify(state.patientDb));
+                    
+                    alert("Account recuperato con successo!");
+                    location.reload();
+                } else {
+                    alert("Attenzione: Questo ID non è stato trovato nel Cloud.");
+                }
+            } catch (e) {
+                alert("Errore di connessione. Riprova.");
+            }
+        }
+
+        // [FUNZIONE: ATTIVAZIONE BUSINESS E BLOCCO DOPPIONI]
+        function initBusinessProfile() {
+            const n = document.getElementById('setup-name').value.trim();
+            const p = document.getElementById('setup-phone').value.trim();
+            const s = document.getElementById('setup-type').value;
+
+            if (n.length < 3) { alert("Nome attività troppo corto."); return; }
+            if (!/^[0-9]{8,11}$/.test(p)) { alert("Numero WhatsApp non valido."); return; }
+
+            const phoneFormatted = '39' + p.replace(/\D/g, '');
+            state.bizProfile = { name: n, phone: phoneFormatted, sector: s, created_at: new Date().toISOString() };
+            localStorage.setItem('spich_v18_biz_data', JSON.stringify(state.bizProfile));
+
+            // Invia al server per verifica doppioni numero business
+            fetch(_0x1a2b, {
+                method: "POST", 
+                mode: "no-cors", 
+                body: JSON.stringify({ 
+                    t: "REG_BIZ", 
+                    id: state.deviceID, 
+                    nome: n, 
+                    settore: s, 
+                    whatsapp: phoneFormatted 
+                })
+            });
+
+            triggerToast("NETWORK ATTIVATO!");
+            setTimeout(() => { location.reload() }, 1500);
+        }
+
+        // [FUNZIONE: CREAZIONE PAZIENTE E BLOCCO DOPPIONI NUMERO]
+        function registerNewPatient() {
+            const n = document.getElementById('new-client-name').value.trim();
+            const t = document.getElementById('new-client-tel').value.trim();
+            const rE = document.getElementById('val-referral');
+            const lE = document.getElementById('val-loyalty');
+            const cR = rE ? rE.value : 'Sconto 10%';
+            const cL = lE ? lE.value : 'Sconto 50%';
+
+            if (n.length < 3) { alert("Inserire il nome completo."); return; }
+            if (!/^[0-9]{9,11}$/.test(t)) { alert("Numero WhatsApp non valido."); return; }
+
+            const formattedTel = '39' + t.replace(/\D/g, '');
+            
+            // Verifica se il numero paziente esiste già localmente
+            const isDuplicate = state.patientDb.some(p => p.tel === formattedTel);
+            if (isDuplicate) {
+                alert("⚠️ Questo numero è già registrato nell'anagrafica!");
+                return;
+            }
+
+            const u = 'CID-' + Date.now().toString(36).toUpperCase();
+            const pR = { cid: u, nome: n, tel: formattedTel, sconto: cR, premio: cL, pts: 0 };
+
+            state.patientDb.unshift(pR);
+            localStorage.setItem('spich_v18_db', JSON.stringify(state.patientDb));
+            
+            fetch(_0x1a2b, {
+                method: "POST", 
+                mode: "no-cors", 
+                body: JSON.stringify({ 
+                    t: "ADD_CLIENT", 
+                    bizId: state.deviceID, 
+                    bizName: state.bizProfile.name, 
+                    clientName: n, 
+                    clientTel: formattedTel, 
+                    cid: u, 
+                    sconto: cR, 
+                    premio: cL,
+                    pts: 0
+                })
+            });
+
+            triggerToast("Pass Creato!");
+            refreshPatientUI();
+            toggleLimitWarnings();
+            document.getElementById('new-client-name').value = "";
+            document.getElementById('new-client-tel').value = "";
+        }
+
+        // AGGIORNAMENTO LISTA DASHBOARD
+        function refreshPatientUI() {
+            const l = document.getElementById('main-list-render');
+            if (!l) return;
+            l.innerHTML = "";
+            const s = document.getElementById('stats-total');
+            if (s) s.innerText = state.patientDb.length;
+
+            if (state.patientDb.length === 0) {
+                l.innerHTML = `<p style="text-align:center; color:#94a3b8; font-weight:600; padding:30px;">Anagrafica vuota.</p>`;
+                return;
+            }
+
+            state.patientDb.forEach((e, i) => {
+                const rU = window.location.href.split('?')[0];
+                const vP = `?v=gift&st=${encodeURIComponent(state.bizProfile.name)}&wa=${state.bizProfile.phone}&n=${encodeURIComponent(e.nome)}&cid=${e.cid}&pr=${encodeURIComponent(e.premio)}&sc=${encodeURIComponent(e.sconto)}`;
+                const fL = rU + vP;
+                const wT = `Ciao ${e.nome}! 🎁 Ecco il tuo Pass Regalo di ${state.bizProfile.name}!\n\nUsalo per accumulare punti o regala lo sconto a un amico. ✨\n\nVisualizza qui:\n${fL}`;
+                const wU = `https://wa.me/${e.tel}?text=${encodeURIComponent(wT)}`;
+
+                let d = state.isProActive ? 
+                    `<button class="tool-btn btn-del-action" onclick="removeEntry(${i})"><i class="fas fa-trash-alt"></i></button>` : 
+                    `<button class="tool-btn btn-lock-action" onclick="alert('Passa alla versione PRO per eliminare i record.')"><i class="fas fa-lock"></i></button>`;
+
+                l.innerHTML += `
+                    <div class="row-item">
+                        <div class="row-info">
+                            <b>${e.nome}</b>
+                            <span>${e.pts} Punti Registrati</span>
+                            <span>Premio: ${e.premio}</span>
+                        </div>
+                        <div class="row-tools">
+                            <a href="${wU}" target="_blank" class="tool-btn btn-wa-action"><i class="fab fa-whatsapp"></i></a>
+                            <button class="tool-btn btn-pts-action" onclick="updatePoints(${i})">+1</button>
+                            ${d}
+                        </div>
+                    </div>`;
+            });
+        }
+
+        // LOGICA PUNTI E CLOUD SYNC
+        function updatePoints(i) {
+            state.patientDb[i].pts++;
+            localStorage.setItem('spich_v18_db', JSON.stringify(state.patientDb));
+            fetch(_0x1a2b, {
+                method: "POST", 
+                mode: "no-cors", 
+                body: JSON.stringify({ 
+                    t: "UPDATE_POINTS", 
+                    bizId: state.deviceID, 
+                    cid: state.patientDb[i].cid, 
+                    pts: state.patientDb[i].pts,
+                    clientName: state.patientDb[i].nome,
+                    bizName: state.bizProfile.name
+                })
+            });
+            triggerToast("Punto Registrato!");
+            refreshPatientUI();
+        }
+
+        // [MODALITÀ VOUCHER: GESTIONE NOMI AMICI]
+        async function initVoucherMode(p, isFriend) {
+            navigateTo('voucher');
+            const s = p.get('st') || "SPICH NETWORK";
+            const b = document.getElementById('display-biz-name');
+            if (b) b.innerText = s;
+
+            if (isFriend) {
+                // Se è la modalità "Amico", mostra il nome di chi ha fatto il regalo
+                const senderName = p.get('n') || "Un amico";
+                document.getElementById('display-user-name').innerText = senderName + " ti ha fatto un regalo!";
+                
+                const f = document.getElementById('display-friend-subtitle');
+                if (f) {
+                    f.innerText = p.get('sc') || "Vantaggio Esclusivo";
+                    f.style.display = "block";
+                }
+                document.getElementById('display-dots-ui').style.display = 'none';
+                document.getElementById('display-qr-box').style.display = 'none';
+                document.getElementById('btn-share-friend').style.display = 'none';
+                document.getElementById('display-info-text').innerText = "Mostra questa schermata alla reception per ricevere il tuo regalo.";
+            } else {
+                // Modalità proprietaria (Paziente)
+                const userName = p.get('n') || "Paziente";
+                document.getElementById('display-user-name').innerText = "Ciao, " + userName;
+                
+                const r = document.getElementById('display-reward-desc');
+                if (r) r.innerText = p.get('pr') || "Premio Fedeltà";
+
+                const q = document.getElementById("qrcode-canvas");
+                if (q) {
+                    new QRCode(q, { text: window.location.href, width: 170, height: 170, colorDark: "#003366", colorLight: "#ffffff" });
+                }
+
+                // Recupera punti dal Cloud in tempo reale
+                try {
+                    const c = p.get('cid');
+                    const rs = await fetch(`${_0x1a2b}?getCid=${c}`);
+                    const cd = await rs.json();
+                    const pt = parseInt(cd.pts || 0);
+                    const dots = document.querySelectorAll('.fidelity-point');
+                    for (let j = 0; j < pt && j < 5; j++) { dots[j].classList.add('filled'); }
+                    if (pt >= 5) { document.getElementById('display-win-box').style.display = "block"; }
+                } catch (e) {}
+            }
+        }
+
+        // [FUNZIONE: CONDIVISIONE VOUCHER AMICO CON NOME]
+        function shareVoucherLink() {
+            const c = new URL(window.location.href);
+            c.searchParams.set('v', 'friend');
+            
+            const s = c.searchParams.get('st') || "questo studio";
+            const sc = c.searchParams.get('sc') || "un vantaggio speciale";
+            const n = c.searchParams.get('n') || "Un amico"; // Il nome del proprietario del pass
+
+            const m = `Ehi! 👋 ${n} ti ha fatto un regalo! Ho ricevuto da ${s} uno ${sc} per te! 🎁\n\nClicca qui per ottenerlo subito 👇:\n${c.toString()}`;
+            window.open(`https://wa.me/?text=${encodeURIComponent(m)}`);
+        }
+
+        // UTILITY: CONTROLLO STATO PRO E TERMINOLOGIA
+        async function checkCloudStatus() {
+            if (!state.bizProfile) return;
+            try {
+                const r = await fetch(`${_0x1a2b}?checkPro=${state.deviceID}`);
+                const c = await r.json();
+                const b = document.getElementById('plan-badge');
+                if (c.isPro === "PRO") {
+                    state.isProActive = true;
+                    if (b) { b.innerText = "PRO"; b.classList.replace('badge-free', 'badge-pro'); }
+                    unlockProFeatures();
+                }
+                toggleLimitWarnings();
+            } catch (e) {}
+        }
+
+        function unlockProFeatures() {
+            const r = document.getElementById('slot-referral');
+            const l = document.getElementById('slot-loyalty');
+            if (r) r.innerHTML = `<input type="text" id="val-referral" placeholder="Sconto Amico Libero">`;
+            if (l) l.innerHTML = `<input type="text" id="val-loyalty" placeholder="Premio Libero">`;
+        }
+
+        function toggleLimitWarnings() {
+            if (state.isProActive) return;
+            const b = document.getElementById('alert-limit-reached');
+            const s = document.getElementById('btn-submit-main');
+            if (state.patientDb.length >= 10) {
+                if (b) b.style.display = 'block';
+                if (s) s.disabled = true;
+            }
+        }
+
+        function applyTerminology() {
+            if (!state.bizProfile || !state.bizProfile.sector) return;
+            const m = { "Ristorazione": "Ospiti", "Wellness": "Clienti", "Salute": "Pazienti" };
+            const t = m[state.bizProfile.sector] || "Pazienti";
+            const s = document.getElementById('stats-label');
+            const l = document.getElementById('label-client-name');
+            const p = document.getElementById('new-client-name');
+            if (s) s.innerText = t + " nel Cloud";
+            if (l) l.innerText = "Nome " + t;
+            if (p) p.placeholder = "Inserisci Nome " + t;
+        }
+
+        function removeEntry(i) {
+            if (!state.isProActive) return;
+            const c = state.patientDb[i].cid;
+            if (confirm("Eliminare definitivamente?")) {
+                state.patientDb.splice(i, 1);
+                localStorage.setItem('spich_v18_db', JSON.stringify(state.patientDb));
+                fetch(_0x1a2b, { method: "POST", mode: "no-cors", body: JSON.stringify({ t: "DELETE_CLIENT", bizId: state.deviceID, cid: c }) });
+                triggerToast("Eliminato.");
+                refreshPatientUI();
+            }
+        }
+
+        function sendProUpgradeRequest() {
+            fetch(_0x1a2b, { method: "POST", mode: "no-cors", body: JSON.stringify({ t: "REQ_PRO", id: state.deviceID, nome: state.bizProfile.name }) });
+            alert("RICHIESTA INVIATA! Ti contatteremo su WhatsApp.");
+        }
     </script>
 </body>
 </html>
